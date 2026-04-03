@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* INDEX */
+.banner {
+    background: linear-gradient(rgba(0, 0, 131, 0.205), rgba(51, 41, 41, 0.712)), url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 115vh;
+}
+
+.bg-nav {
+    background-color: rgba(18, 4, 99, 0.418)
+}
+
+.banner-badge {
+    display: table; /* Membuat lebar sesuai konten */
+    margin: 0 auto; /* Menarik elemen ke tengah secara horizontal */
+    background-color: rgba(30, 5, 88, 0.233);
+    padding: 6px 12px;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    border: 2px solid rgb(2, 42, 151);
+    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .lg-mx-5 {
+        margin-left: 3rem !important;
+        margin-right: 3rem !important;
+    }
+
+    .lg-px-5 {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}
+
+#title {
+    font-size: 6rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    #title {
+        font-size: 3rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    #button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        height: 270vh;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.hovered-card {
+    transition: transform 0.3s ease;
+}
+.hovered-card:hover {
+    transform: translateY(-10px);
+}
+
+#highlight {
+    transition: all 0.3s ease;
+}
+
+#highlight:hover {
+    transform: translateY(-5px);
+}
+
+.hovered-text {
+    transition: all 0.3s ease;
+}
+
+.hovered-text:hover {
+    transform: scale(1.05);
+    color: rgb(17, 45, 168);
+    text-shadow: 0 0 100px rgba(172, 198, 255, 0.7);
+}
+
+.bg-palz {
+    background-color: rgb(4, 4, 58);
+}
+
+
+
+/* Top Up */
+.t-banner {
+    background: linear-gradient(rgba(0, 0, 131, 0.205), rgba(51, 41, 41, 0.712)), url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+#game-list {
+    background: linear-gradient(rgb(0, 0, 88), rgb(0, 0, 0));
+}
+
+.portrait {
+    aspect-ratio: 3 / 4;
+}
+
+#game-list .hovered-card:hover {
+    transform: translateY(-5px);
+}
+
+#game-list .card {
+    border-radius: 20px;
+}
+
+#game-list .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.icon-service {
+    border: solid rgb(100, 100, 100) 2px;
+    padding: 12px;
+    border-radius: 100px;
+    padding-block: 40px;
+}
+
+#layanan {
+    background-color: rgb(0, 0, 0);
+}
+
+#komen {
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 20px;
+    border: 1px solid rgb(1, 15, 59);
+}
+
+.textarea {
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 20px;
+    padding: 12px;
+    border: 1px solid rgb(1, 15, 59);
+    color: rgb(255, 255, 255);
+}
+
+#sec2 .hovered-card:hover {
+    transform: translateY(-5px);
+}
