@@ -96,6 +96,17 @@
     background-color: rgb(4, 4, 58);
 }
 
+#display .card {
+    border-radius: 20px;
+}
+
+#display .card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 
 
 /* Top Up */
@@ -110,8 +121,8 @@
     background: linear-gradient(rgb(0, 0, 88), rgb(0, 0, 0));
 }
 
-.portrait {
-    aspect-ratio: 3 / 4;
+.square-img {
+    aspect-ratio: 1 / 1;
 }
 
 #game-list .hovered-card:hover {
@@ -155,4 +166,121 @@
 
 #sec2 .hovered-card:hover {
     transform: translateY(-5px);
+}
+
+.games {
+    transition: fadeSlideIn 0.4s ease both;
+}
+
+.games .hovered-card {
+    opacity: 0;
+    animation: fadeSlideIn 0.4s ease forwards;
+}
+
+.games .hovered-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+.games .hovered-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.games .hovered-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+.games .hovered-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+.games .hovered-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+.games .hovered-card:nth-child(6) {
+    animation-delay: 0.3s;
+}
+.games .hovered-card:nth-child(7) {
+    animation-delay: 0.35s;
+}
+.games .hovered-card:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+.card {
+    transition: all 1s ease;
+    box-shadow: 0 0 10px rgba(16, 5, 112, 0.2);
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(16, 5, 112, 0.4);
+}
+
+.card-hover {
+    transition: transform 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-10px);
+}
+
+
+
+/* Promo */
+.promo-section {
+    animation: fadeSlideIn 0.4s ease both;
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.promo-section .hovered-card {
+    opacity: 0;
+    animation: fadeSlideIn 0.4s ease forwards;
+}
+
+.promo-section .hovered-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+.promo-section .hovered-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.promo-section .hovered-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+.promo-section .hovered-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+.promo-section .hovered-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+.promo-section .hovered-card:nth-child(6) {
+    animation-delay: 0.3s;
+}
+.promo-section .hovered-card:nth-child(7) {
+    animation-delay: 0.35s;
+}
+.promo-section .hovered-card:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+.filter-btn {
+    transition: 
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.25s ease;
+}
+
+.filter-btn:active {
+    transform: scale(0.95);
+}
+.filter-btn:active {
+    box-shadow: 0 4px 14px rgba(255, 193, 7, 0.45);
+}
+
+.land {
+    aspect-ratio: 16 / 9;
 }
