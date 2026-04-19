@@ -297,3 +297,85 @@
     background-position: center;
     height: 50vh;
 }
+
+
+
+
+
+
+/* data */
+.d-banner {
+    background: linear-gradient(rgba(0, 0, 131, 0.605), rgba(51, 41, 41, 1)), url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .d-banner {
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+
+/* Card Utama (Kiri & Kanan) */
+.d-card {
+    background: rgba(30, 30, 30, 0.7) !important; /* Gelap transparan */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important; /* Border tipis agar tegas */
+    color: #ffffff !important;
+    border-radius: 15px !important;
+}
+
+/* Judul dan Teks di dalam Card */
+.d-card h5, .d-card h3, .d-card label {
+    color: #ffffff !important;
+}
+
+/* Input Form (User ID & Server ID) */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: #7d2ae8 !important; /* Warna ungu saat diklik */
+    box-shadow: 0 0 0 0.25rem rgba(125, 42, 232, 0.25) !important;
+}
+
+/* Badge Nomor (1 & 2) */
+.section-badge {
+    background-color: #ff4757; /* Warna merah/pink seperti di gambar sebelumnya */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px 12px;
+    margin-right: 10px;
+}
+
+/* Card Pilihan Nominal (Diamond) */
+.nominal-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nominal-item:hover {
+    background: rgba(125, 42, 232, 0.2); /* Glow ungu saat hover */
+    border-color: #7d2ae8;
+}
+
+.item-card {
+    background-color: #3d3d3d;
+    border: 1px solid #4d4d4d;
+    border-radius: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.item-card:hover {
+    border-color: #4787ff; /* Warna aksen saat di-hover */
+    transform: translateY(-2px);
+}
